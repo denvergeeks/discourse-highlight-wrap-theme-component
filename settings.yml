@@ -1,0 +1,4 @@
+svg_icons:
+  default: "paint-brush"
+  type: "list"
+  list_type: "compact"
