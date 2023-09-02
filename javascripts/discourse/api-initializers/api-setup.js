@@ -44,7 +44,7 @@ export default apiInitializer("0.11.1", (api) => {
     toolbar.addButton({
       id: "composer_highlight",
       group: "extras",
-      icon: "highlight",
+      icon: "paint-brush",
       title: "highlight_button_text",
 
       perform: e => e.applySurround('[wrap=highlight]', '[/wrap]'),
