@@ -42,7 +42,7 @@ export default apiInitializer("0.11.1", (api) => {
   // add button to the toolbar
   api.onToolbarCreate((toolbar) => {
     toolbar.addButton({
-      id: "composer_highlight",
+      id: "composer_highlight_button",
       group: "extras",
       icon: "highlighter-solid",
       title: "highlight_button_title",
@@ -55,6 +55,6 @@ export default apiInitializer("0.11.1", (api) => {
       const id = helper ? `post_${helper.getModel().id}` : "composer";
       applyHighlight(elem, id);
     },
-    { id: "discourse-highlight-wrap-theme-component" }
+    { id: "wrap-highlight" }
   );
 });
