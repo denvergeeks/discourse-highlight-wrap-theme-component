@@ -16,9 +16,8 @@ export default apiInitializer("0.11.1", (api) => {
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.qrcode_button_title = I18n.t(themePrefix("composer_footnote_button_title"));
   // I18n.translations[currentLocale].js.composer.qrcode_button_text = I18n.t(themePrefix("composer_footnote_button_text"));
-  I18n.translations[currentLocale].js.qrcode_button_title = "Insert QR Code";
-  I18n.translations[currentLocale].js.composer.qrcode_button_text =
-    "Highlight Text";
+  I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
+  I18n.translations[currentLocale].js.composer.highlight_button_text = "Highlight Text";
 
   api.modifyClass("controller:composer", {
     pluginId: "highlight",
