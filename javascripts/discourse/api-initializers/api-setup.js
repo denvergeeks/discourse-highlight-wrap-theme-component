@@ -30,7 +30,8 @@ export default apiInitializer("0.11.1", (api) => {
       },
     },
   });
-
+  
+  // add button to the menu dropdown
   // api.addToolbarPopupMenuOptionsCallback(() => {
   //  return {
   //    icon: "highlighter-solid",
@@ -39,17 +40,14 @@ export default apiInitializer("0.11.1", (api) => {
   //  };
   // });
 
-  // add button rather than to the menu
+  // add button to the toolbar
   api.onToolbarCreate((toolbar) => {
     toolbar.addButton({
       id: "composer_highlight",
       group: "extras",
       icon: "highlighter-solid",
       title: "highlight_button_title",
-
       perform: e => e.applySurround('[wrap=highlight]', '[/wrap]'),
-      
-    //  perform: (e) => e.addText("\n" + `[wrap=highlight]` + "\n[/wrap]\n"),
     });
   });
 
