@@ -6,6 +6,6 @@
   "about": "Adds a text highlighter button to the composer",
   "version": 0.1,
   "assets": {
-   "icons-sprite": "/assets/highlighter-solid.svg"
+   "icons-sprite": "/assets/highlighter.svg"
   }
 }
