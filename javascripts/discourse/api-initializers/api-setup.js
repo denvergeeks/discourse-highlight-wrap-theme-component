@@ -45,7 +45,7 @@ export default apiInitializer("0.11.1", (api) => {
       id: "composer_highlight",
       group: "extras",
       icon: "highlighter-solid",
-      title: "highlight_button_text",
+      title: "highlight_button_title",
 
       perform: e => e.applySurround('[wrap=highlight]', '[/wrap]'),
       
