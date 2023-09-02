@@ -3,7 +3,7 @@ import loadScript from "discourse/lib/load-script";
 import I18n from "I18n";
 
 async function applyHighlight(element) {
-  const highlights = element.querySelectorAll(".d-wrap[data-wrap=highlight]");
+  const highlights = element.querySelectorAll(".d-wrap[data-wrap-highlight]");
   if (!highlights.length) {
     return;
   }
@@ -25,7 +25,7 @@ export default apiInitializer("0.11.1", (api) => {
     actions: {
       highlightButton() {
         this.get("toolbarEvent").addText(
-          "\n" + `[data-wrap=highlight]` + "\n[/wrap]\n"
+          "\n" + `[data-wrap-highlight]` + "\n[/wrap]\n"
         );
       },
     },
@@ -46,7 +46,7 @@ export default apiInitializer("0.11.1", (api) => {
   //     group: "extras",
   //     icon: "highlight",
   //     title: "highlight_button_text",
-  //     perform: (e) => e.addText("\n" + `[data-wrap=highlight]` + "\n[/wrap]\n"),
+  //     perform: (e) => e.addText("\n" + `[data-wrap-highlight]` + "\n[/wrap]\n"),
   //   });
   // });
 
