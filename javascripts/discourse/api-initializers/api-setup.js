@@ -33,7 +33,7 @@ export default apiInitializer("0.11.1", (api) => {
 
   // api.addToolbarPopupMenuOptionsCallback(() => {
   //  return {
-  //    icon: "paint-brush",
+  //    icon: "highlighter-solid",
   //    label: "highlight_button_title",
   //    action: "highlightButton",
   //  };
@@ -44,7 +44,7 @@ export default apiInitializer("0.11.1", (api) => {
     toolbar.addButton({
       id: "composer_highlight",
       group: "extras",
-      icon: "paint-brush",
+      icon: "highlighter-solidh",
       title: "highlight_button_text",
 
       perform: e => e.applySurround('[wrap=highlight]', '[/wrap]'),
