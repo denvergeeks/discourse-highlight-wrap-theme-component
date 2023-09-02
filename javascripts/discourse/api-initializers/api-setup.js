@@ -53,7 +53,7 @@ export default apiInitializer("0.11.1", (api) => {
   api.decorateCookedElement(
     async (elem, helper) => {
       const id = helper ? `post_${helper.getModel().id}` : "composer";
-      applyQrcode(elem, id);
+      applyHighlight(elem, id);
     },
     { id: "discourse-highlight-wrap-theme-component" }
   );
