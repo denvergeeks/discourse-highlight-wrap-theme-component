@@ -1,6 +1,8 @@
 {
-  "name": "Highlight Composer Button",
+  "name": "Highlighting Composer Button",
   "component": true,
-  "authors": "Jen Wallace",
-  "about_url": "https://github.com/denvergeeks/discourse-highlight-wrap-theme-component"
+  "authors": ["denvergeeks", "Jay Pfaffman"],
+  "about_url": "https://github.com/denvergeeks/discourse-highlight-wrap-theme-component",
+  "about": "Adds a text highlighting button to the composer",
+  "version": 0.1
 }
