@@ -4,5 +4,8 @@
   "authors": ["denvergeeks", "Jay Pfaffman"],
   "about_url": "https://github.com/denvergeeks/discourse-highlight-wrap-theme-component",
   "about": "Adds a text highlighter button to the composer",
-  "version": 0.1
+  "version": 0.1,
+  "assets": {
+   "icons-sprite": "/assets/highlighter-solid.svg"
+  }
 }
