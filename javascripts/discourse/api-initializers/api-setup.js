@@ -11,7 +11,7 @@ async function applyHighlight(element) {
 
 export default apiInitializer("0.11.1", (api) => {
   const { iconNode } = require("discourse-common/lib/icon-library");
-  iconNode("paint-brush");
+  iconNode("highlighter-solid");
 
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.qrcode_button_title = I18n.t(themePrefix("composer_footnote_button_title"));
