@@ -31,24 +31,27 @@ export default apiInitializer("0.11.1", (api) => {
     },
   });
 
-  api.addToolbarPopupMenuOptionsCallback(() => {
-    return {
-      icon: "paint-brush",
-      label: "highlight_button_title",
-      action: "highlightButton",
-    };
-  });
+  // api.addToolbarPopupMenuOptionsCallback(() => {
+  //  return {
+  //    icon: "paint-brush",
+  //    label: "highlight_button_title",
+  //    action: "highlightButton",
+  //  };
+  // });
 
   // add button rather than to the menu
-  // api.onToolbarCreate((toolbar) => {
-  //   toolbar.addButton({
-  //     id: "composer_highlight",
-  //     group: "extras",
-  //     icon: "highlight",
-  //     title: "highlight_button_text",
-  //     perform: (e) => e.addText("\n" + `[wrap=highlight]` + "\n[/wrap]\n"),
-  //   });
-  // });
+  api.onToolbarCreate((toolbar) => {
+    toolbar.addButton({
+      id: "composer_highlight",
+      group: "extras",
+      icon: "highlight",
+      title: "highlight_button_text",
+
+      perform: e => e.applySurround('[wrap=highlight]', '[/wrap]'),
+      
+    //  perform: (e) => e.addText("\n" + `[wrap=highlight]` + "\n[/wrap]\n"),
+    });
+  });
 
   api.decorateCookedElement(
     async (elem, helper) => {
