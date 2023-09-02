@@ -1,2 +1,3 @@
 en:
-  highlight_button_text: "Highlight Text"
+  composer:
+    highlight_button_text: Highlight Text
