@@ -46,7 +46,7 @@ export default apiInitializer("0.11.1", (api) => {
       group: "extras",
       icon: "highlighter",
       title: "highlight_button_title",
-      perform: e => e.applySurround('[wrap=highlight]', '[/wrap]'),
+      perform: e => e.applySurround('[wrap=highlight]', '[/wrap]')
     });
   });
 
