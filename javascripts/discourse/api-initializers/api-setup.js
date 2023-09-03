@@ -16,13 +16,14 @@ export default apiInitializer("0.11.1", (api) => {
   // I18n.translations[currentLocale].js.highlight_button_title = I18n.t(themePrefix("composer_highlight_button_title"));
   // I18n.translations[currentLocale].js.composer.highlight_button_text = I18n.t(themePrefix("composer_highlight_button_text"));
    I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
+   I18n.translations[currentLocale].js.composer.this = "this";
   // I18n.translations[currentLocale].js.composer.highlight_button_text = "Highlight Text";
 
   api.modifyClass("controller:composer", {
     pluginId: "highlight",
     actions: {
       highlightButton() {
-        this.get("toolbarEvent").addText(
+        this.get("toolbarEvent").applySurround(
           "\n" + `[wrap=highlight]` + "\n[/wrap]\n"
         );
       },
@@ -45,7 +46,7 @@ export default apiInitializer("0.11.1", (api) => {
      group: "extras",
      icon: "highlighter",
      title: "highlight_button_title",
-     perform: e => e.applySurround('[wrap=highlight]', '[/wrap]')
+     perform: e => e.applySurround('[wrap=highlight]', '[/wrap]', 'this')
    });
  });
 
