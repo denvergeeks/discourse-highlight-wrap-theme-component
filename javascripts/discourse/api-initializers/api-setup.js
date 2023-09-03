@@ -28,6 +28,9 @@ export default apiInitializer("0.11.1", (api) => {
 var obj = { "text" : "Hi" };        
   api.modifyClass("controller:composer", {
     pluginId: "highlight",
+
+text: "text",
+    
     actions: {
       highlightButton() {
         this.get("toolbarEvent").addText(
