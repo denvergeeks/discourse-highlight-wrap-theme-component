@@ -7,3 +7,8 @@ highlighter_background:
   default: "#ff8"
   description: 
     en: "Highlighter color in hexadecimal, css color name or Discourse color variable. Defaults to medium yellow #ff8."
+highlighter_color:
+  type: string
+  default: "#222"
+  description: 
+    en: "Highlighter text color in hexadecimal, css color name or Discourse color variable. Defaults to dark gray #222."
