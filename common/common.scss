@@ -1,5 +1,8 @@
 .cooked,
 .d-editor-preview {
+  [data-wrap=color] {
+    color: $highlighter_color;
+  }
   [data-wrap=highlight] {
     background-color: $highlighter_background;
     border-radius: 3px;
