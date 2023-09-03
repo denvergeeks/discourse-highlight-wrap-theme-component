@@ -29,7 +29,7 @@ export default apiInitializer("0.11.1", (api) => {
     },
   });
   
-   add button to the menu dropdown
+ //  add button to the menu dropdown
    api.addToolbarPopupMenuOptionsCallback(() => {
     return {
       icon: "highlighter",
