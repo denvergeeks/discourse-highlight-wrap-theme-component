@@ -4,6 +4,6 @@ svg_icons:
   list_type: 'compact'
 highlighter_background:
   type: string
-  default: ""
+  default: "#ff8"
   description: 
     en: "Highlighter color in hexadecimal, css color name or Discourse color variable. Leave blank to use current default."
