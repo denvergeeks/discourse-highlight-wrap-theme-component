@@ -22,17 +22,6 @@ export default apiInitializer("0.11.1", (api) => {
     pluginId: "highlight",
     actions: {
       highlightButton() {
-
-
-      //  this.get("toolbarEvent").applySurround('[wrap="floatl"]\n', '\n[/wrap]', "float_left_text");
-        
-  api.modifyClass("controller:composer", {
-    pluginId: "highlight",
-
-
-    
-    actions: {
-      highlightButton() {
         this.get("toolbarEvent").addText(
           "\n" + `[wrap=highlight]` + "\n[/wrap]\n"
         );
