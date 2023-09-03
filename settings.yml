@@ -1,4 +1,4 @@
 svg_icons:
-  default: 'highlighter|paint-brush'
+  default: 'highlighter'
   type: 'list'
   list_type: 'compact'
