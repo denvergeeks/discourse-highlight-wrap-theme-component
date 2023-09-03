@@ -1,9 +1,9 @@
 .cooked,
 .d-editor-preview {
   [data-wrap=highlight] {
-    background-color: var(--highlight-medium);
+    background-color: $highlighter_background;
     border-radius: 3px;
     width: fit-content;
-    outline: 2px solid var(--highlight-medium);
+    outline: 2px solid $highlighter_background;
   }
 }
