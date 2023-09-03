@@ -25,7 +25,7 @@ export default apiInitializer("0.11.1", (api) => {
 
 
       //  this.get("toolbarEvent").applySurround('[wrap="floatl"]\n', '\n[/wrap]', "float_left_text");
-var obj = { "text" : "Hi" };        
+        
   api.modifyClass("controller:composer", {
     pluginId: "highlight",
 
