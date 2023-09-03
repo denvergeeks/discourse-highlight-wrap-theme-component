@@ -2,3 +2,8 @@ svg_icons:
   default: 'highlighter'
   type: 'list'
   list_type: 'compact'
+highlighter_background:
+  type: string
+  default: ""
+  description: 
+    en: "Highlighter color in hexadecimal, css color name or Discourse color variable. Leave blank to use current default."
