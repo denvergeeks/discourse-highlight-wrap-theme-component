@@ -1,6 +1,6 @@
 import { apiInitializer } from "discourse/lib/api";
 import loadScript from "discourse/lib/load-script";
-// import I18n from "I18n";
+import I18n from "I18n";
 
 async function applyHighlight(element) {
   const highlights = element.querySelectorAll(".d-wrap[wrap=highlight]");
@@ -12,7 +12,7 @@ async function applyHighlight(element) {
 export default apiInitializer("0.11.1", (api) => {
   const { iconNode } = require("discourse-common/lib/icon-library");
   let icon = iconNode("highlighter");
-  // const currentLocale = I18n.currentLocale();
+  const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.highlight_button_title = I18n.t(themePrefix("composer_highlight_button_title"));
   // I18n.translations[currentLocale].js.composer.highlight_button_text = I18n.t(themePrefix("composer_highlight_button_text"));
    I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
