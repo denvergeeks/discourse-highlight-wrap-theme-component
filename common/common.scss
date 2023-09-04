@@ -1,7 +1,8 @@
 .cooked,
 .d-editor-preview {
+  
   [data-wrap=color] {
-    color: $highlighter_color;
+    color: $highlighter_text_color;
   }
   [data-wrap=highlight] {
     background-color: $highlighter_background;
@@ -9,4 +10,5 @@
     width: fit-content;
     outline: 2px solid $highlighter_background;
   }
+  
 }
