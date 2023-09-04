@@ -13,4 +13,4 @@ highlighter_color:
   default: "#222"
   description: 
     en: "Highlighter text color in hexadecimal, css color name or Discourse color variable. Defaults to dark gray #222.
-    Note that changing this will apply the new text color to already existing highlights throughout the site.""
+    Note that changing this will apply the new text color to already existing highlights throughout the site."
