@@ -16,7 +16,7 @@ export default apiInitializer("0.11.1", (api) => {
   // I18n.translations[currentLocale].js.highlight_button_title = I18n.t(themePrefix("composer_highlight_button_title"));
   // I18n.translations[currentLocale].js.composer.highlight_button_text = I18n.t(themePrefix("composer_highlight_button_text"));
   
-         // I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
+  // I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
    I18n.translations[currentLocale].js.composer.this = "this";
   // I18n.translations[currentLocale].js.composer.highlight_button_text = "Highlight Text";
 
