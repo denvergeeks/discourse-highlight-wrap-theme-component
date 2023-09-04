@@ -1,15 +1,15 @@
 .cooked,
 .d-editor-preview {
-  
   [data-wrap=highlight] {
     background-color: $highlighter_background;
     border-radius: 3px;
     width: fit-content;
     outline: 2px solid $highlighter_background;
   }
-  
+/*  
   [data-wrap=color] {
     color: $highlighter_text_color;
   }
+*/
 
 }
