@@ -1,3 +1,5 @@
+// * highlighter background color override * //
+
 @if $highlighter_background_color_override !="" {
 
   .cooked,
@@ -10,7 +12,7 @@
   }
 }
 
-@if $highlighter_background_color_override =="" {
+@else {
 
   .cooked,
   .d-editor-preview {
@@ -22,6 +24,8 @@
   }
 }
 
+// * highlighter text color override * //
+
 @if $highlighter_text_color_override !="" {
 
   .cooked,
@@ -32,7 +36,7 @@
   }
 }
 
-@if $highlighter_text_color_override =="" {
+@else {
 
   .cooked,
   .d-editor-preview {
