@@ -3,7 +3,7 @@ import loadScript from "discourse/lib/load-script";
 import I18n from "I18n";
 
 async function applyHighlight(element) {
-  const highlights = element.querySelectorAll(".d-wrap[wrap=highlight]");
+  const highlights = element.querySelectorAll("<mark>");
   if (!highlights.length) {
     return;
   }
@@ -15,7 +15,6 @@ export default apiInitializer("0.11.1", (api) => {
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.highlight_button_title = I18n.t(themePrefix("composer_highlight_button_title"));
   // I18n.translations[currentLocale].js.composer.highlight_button_text = I18n.t(themePrefix("composer_highlight_button_text"));
-  
    I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
    I18n.translations[currentLocale].js.composer.this = "this";
   // I18n.translations[currentLocale].js.composer.highlight_button_text = "Highlight Text";
@@ -25,7 +24,7 @@ export default apiInitializer("0.11.1", (api) => {
     actions: {
       highlightButton() {
         this.get("toolbarEvent").applySurround(
-          "\n" + `[wrap=highlight]` + "\n[/wrap]\n"
+          "\n" + `<mark>` + "\n</mark>\n"
         );
       },
     },
@@ -47,7 +46,8 @@ export default apiInitializer("0.11.1", (api) => {
      group: "extras",
      icon: "highlighter",
      title: "highlight_button_title",
-     perform: e => e.applySurround('[wrap=highlight]', '[/wrap]', 'this')
+     // perform: e => e.applySurround('<span>[wrap=highlight]', '[/wrap]</span>', 'this')
+     perform: e => e.applySurround('<mark>', '</mark>', 'this')
    });
  });
 
@@ -56,6 +56,6 @@ export default apiInitializer("0.11.1", (api) => {
       const id = helper ? `post_${helper.getModel().id}` : "composer";
       applyHighlight(elem, id);
     },
-    { id: "wrap-highlight" }
+    { id: "wrap-mark" }
   );
 });
