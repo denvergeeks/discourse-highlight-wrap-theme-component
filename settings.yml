@@ -2,8 +2,13 @@ svg_icons:
   default: 'highlighter'
   type: 'list'
   list_type: 'compact'
-highlighter_background:
+highlighter_background_color_override:
   type: string
-  default: "#ff8"
+  default: ""
   description: 
-    en: "Highlighter color in hexadecimal, css color name or Discourse color variable. Defaults to medium yellow #ff8. Note that changing this will apply the new background color to already existing highlights throughout the site."
+    en: "The color of the Highlighter. (The background color of the highlighted text, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for highlighting. Note that changing this will apply the new background color to already existing highlights throughout the site."
+highlighter_text_color_override:
+  type: string
+  default: ""
+  description: 
+    en: "The color of the text in the highlighted selections, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for the (normal text) color. Note that changing this will apply the new text color to already existing highlights throughout the site."
