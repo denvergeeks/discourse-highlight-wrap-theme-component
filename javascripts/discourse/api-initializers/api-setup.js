@@ -46,6 +46,8 @@ export default apiInitializer("0.11.1", (api) => {
      group: "extras",
      icon: "highlighter",
      shortcut: "H",
+     preventFocus: true,
+     trimLeading: true,
      title: "highlight_button_title",
      // perform: e => e.applySurround('<span>[wrap=highlight]', '[/wrap]</span>', 'this')
      perform: e => e.applySurround('<mark>', '</mark>', 'this')
