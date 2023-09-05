@@ -1,9 +1,45 @@
-.cooked,
-.d-editor-preview {
-  [data-wrap=highlight] {
-    background-color: $highlighter_background;
-    border-radius: 3px;
-    width: fit-content;
-    outline: 2px solid $highlighter_background;
+@if $highlighter_background_color_override !="" {
+
+  .cooked,
+  .d-editor-preview {
+    mark {
+      background-color: $highlighter_background_color_override;
+      border-radius: 3px;
+      width: fit-content;
+      outline: 2px solid $highlighter_background_color_override;
+    }
+  }
+}
+
+@if $highlighter_background_color_override =="" {
+
+  .cooked,
+  .d-editor-preview {
+    mark {
+      background-color: var(--highlight-medium);
+      border-radius: 3px;
+      width: fit-content;
+      outline: 2px solid var(--highlight-medium);
+    }
+  }
+}
+
+@if $highlighter_text_color_override !="" {
+
+  .cooked,
+  .d-editor-preview {
+    mark {
+      color: $highlighter_text_color_override;
+    }
+  }
+}
+
+@if $highlighter_text_color_override =="" {
+
+  .cooked,
+  .d-editor-preview {
+    mark {
+      color: var(--color);
+    }
   }
 }
