@@ -5,7 +5,6 @@
     mark {
       background-color: $highlighter_background_color_override;
       border-radius: 3px;
-      width: fit-content;
       outline: 2px solid $highlighter_background_color_override;
     }
   }
@@ -18,7 +17,6 @@
     mark {
       background-color: var(--highlight-medium);
       border-radius: 3px;
-      width: fit-content;
       outline: 2px solid var(--highlight-medium);
     }
   }
