@@ -15,29 +15,18 @@ export default apiInitializer("0.11.1", (api) => {
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.highlight_button_title = I18n.t(themePrefix("composer_highlight_button_title"));
   // I18n.translations[currentLocale].js.composer.highlight_button_text = I18n.t(themePrefix("composer_highlight_button_text"));
-   I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
-   I18n.translations[currentLocale].js.composer.this = "this";
+  I18n.translations[currentLocale].js.highlight_button_title = "Highlight Text";
+  I18n.translations[currentLocale].js.composer.this = "this";
   // I18n.translations[currentLocale].js.composer.highlight_button_text = "Highlight Text";
 
   api.modifyClass("controller:composer", {
     pluginId: "highlight",
     actions: {
       highlightButton() {
-        this.get("toolbarEvent").applySurround(
-          "\n" + `<mark>` + "\n</mark>\n"
-        );
+        this.get("toolbarEvent").applySurround("\n" + `<mark>` + "\n</mark>\n");
       },
     },
   });
-  
- //  add button to the menu dropdown
- //  api.addToolbarPopupMenuOptionsCallback(() => {
- //   return {
- //     icon: "highlighter",
- //     label: "highlight_button_title",
- //     action: "highlightButton",
- //   };
- //  });
 
   // add button to the toolbar
   api.onToolbarCreate((toolbar) => {
@@ -45,14 +34,11 @@ export default apiInitializer("0.11.1", (api) => {
       id: "composer_highlight_button",
       group: "extras",
       icon: "highlighter",
-      shortcut: "H",
-      preventFocus: true,
-      trimLeading: true,
       title: "highlight_button_title",
       // perform: e => e.applySurround('<span>[wrap=highlight]', '[/wrap]</span>', 'this')
-      perform: e => e.applySurround('<mark>', '</mark>', 'this')
-   });
- });
+      perform: (e) => e.applySurround("<mark>", "</mark>", "this"),
+    });
+  });
 
   api.decorateCookedElement(
     async (elem, helper) => {
