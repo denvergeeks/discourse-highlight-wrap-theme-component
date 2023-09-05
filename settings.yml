@@ -6,7 +6,7 @@ highlighter_background_color_override:
   type: string
   default: ""
   description: 
-    en: "The color of the Highlighter. (The background color of the highlighted text, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for highlighting. Note that changing this will apply the new background color to already existing highlights throughout the site."
+    en: "The color of the Highlighter (the background color of the highlighted text), in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for highlight-medium. Note that changing this will apply the new background color to already existing highlights throughout the site."
 highlighter_text_color_override:
   type: string
   default: ""
