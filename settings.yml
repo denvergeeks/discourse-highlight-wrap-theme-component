@@ -1,14 +1,16 @@
 svg_icons:
-  default: 'highlighter'
-  type: 'list'
-  list_type: 'compact'
+  default: "highlighter"
+  type: "list"
+  list_type: "compact"
+
 highlighter_background_color_override:
   type: string
   default: ""
-  description: 
+  description:
     en: "The color of the Highlighter (the background color of the highlighted text), in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for highlight-medium. Note that changing this will apply the new background color to already existing highlights throughout the site."
+
 highlighter_text_color_override:
   type: string
   default: ""
-  description: 
+  description:
     en: "The color of the text in the highlighted selections, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for the (normal text) color. Note that changing this will apply the new text color to already existing highlights throughout the site."
