@@ -3,7 +3,7 @@ import loadScript from "discourse/lib/load-script";
 import I18n from "I18n";
 
 async function applyHighlight(element) {
-  const highlights = element.querySelectorAll("<mark>");
+  const highlights = element.querySelectorAll(mark);
   if (!highlights.length) {
     return;
   }
